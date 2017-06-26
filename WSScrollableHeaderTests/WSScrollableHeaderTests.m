@@ -2,8 +2,8 @@
 //  WSScrollableHeaderTests.m
 //  WSScrollableHeaderTests
 //
-//  Created by Dotsquares on 6/22/17.
-//  Copyright © 2017 WebsoftProfession. All rights reserved.
+//  Created by WebsoftProfession on 6/22/17.
+//  WebsoftProfession
 //
 
 #import <XCTest/XCTest.h>

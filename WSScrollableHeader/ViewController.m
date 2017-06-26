@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WSScrollableHeader
 //
-//  Created by Dotsquares on 6/22/17.
-//  Copyright © 2017 WebsoftProfession. All rights reserved.
+//  Created by WebsoftProfession on 6/22/17.
+//  WebsoftProfession
 //
 
 #import "ViewController.h"
@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    imgView.layer.cornerRadius = imgView.frame.size.width/2;
+    imgView.layer.borderColor  = [UIColor darkGrayColor].CGColor;
+    imgView.layer.borderWidth = 1.0;
+    
+    wsImageHeader.enableScaleAnimation = YES;
+    wsImageHeader.scrollInset = 0;
+    
+    wsSearchHeader.scrollInset = 125;
+    wsSearchHeader.enableColorAnimation = YES;
+    
 }
 
 

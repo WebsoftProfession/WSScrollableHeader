@@ -15,6 +15,8 @@
 		60D0728A1EFB915C00A2C628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D072881EFB915C00A2C628 /* LaunchScreen.storyboard */; };
 		60D072951EFB915C00A2C628 /* WSScrollableHeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D072941EFB915C00A2C628 /* WSScrollableHeaderTests.m */; };
 		60D072A01EFB915C00A2C628 /* WSScrollableHeaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D0729F1EFB915C00A2C628 /* WSScrollableHeaderUITests.m */; };
+		60D072AE1EFB954B00A2C628 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D072AD1EFB954B00A2C628 /* image.jpg */; };
+		60D072B11EFB96E300A2C628 /* WSScrollHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D072B01EFB96E300A2C628 /* WSScrollHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		60D0729B1EFB915C00A2C628 /* WSScrollableHeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSScrollableHeaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D0729F1EFB915C00A2C628 /* WSScrollableHeaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSScrollableHeaderUITests.m; sourceTree = "<group>"; };
 		60D072A11EFB915C00A2C628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D072AD1EFB954B00A2C628 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		60D072AF1EFB96E300A2C628 /* WSScrollHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSScrollHeaderView.h; sourceTree = "<group>"; };
+		60D072B01EFB96E300A2C628 /* WSScrollHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSScrollHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,8 @@
 		60D072791EFB915C00A2C628 /* WSScrollableHeader */ = {
 			isa = PBXGroup;
 			children = (
+				60D072B21EFB96E900A2C628 /* WSScrollHeaderClass */,
+				60D072AD1EFB954B00A2C628 /* image.jpg */,
 				60D0727D1EFB915C00A2C628 /* AppDelegate.h */,
 				60D0727E1EFB915C00A2C628 /* AppDelegate.m */,
 				60D072801EFB915C00A2C628 /* ViewController.h */,
@@ -138,6 +145,15 @@
 				60D072A11EFB915C00A2C628 /* Info.plist */,
 			);
 			path = WSScrollableHeaderUITests;
+			sourceTree = "<group>";
+		};
+		60D072B21EFB96E900A2C628 /* WSScrollHeaderClass */ = {
+			isa = PBXGroup;
+			children = (
+				60D072AF1EFB96E300A2C628 /* WSScrollHeaderView.h */,
+				60D072B01EFB96E300A2C628 /* WSScrollHeaderView.m */,
+			);
+			name = WSScrollHeaderClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +223,7 @@
 				TargetAttributes = {
 					60D072761EFB915C00A2C628 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					60D0728F1EFB915C00A2C628 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -249,6 +265,7 @@
 				60D0728A1EFB915C00A2C628 /* LaunchScreen.storyboard in Resources */,
 				60D072871EFB915C00A2C628 /* Assets.xcassets in Resources */,
 				60D072851EFB915C00A2C628 /* Main.storyboard in Resources */,
+				60D072AE1EFB954B00A2C628 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60D072821EFB915C00A2C628 /* ViewController.m in Sources */,
+				60D072B11EFB96E300A2C628 /* WSScrollHeaderView.m in Sources */,
 				60D0727F1EFB915C00A2C628 /* AppDelegate.m in Sources */,
 				60D0727C1EFB915C00A2C628 /* main.m in Sources */,
 			);
@@ -426,10 +444,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WSScrollableHeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ws.WSScrollableHeader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -437,10 +457,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WSScrollableHeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ws.WSScrollableHeader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -509,6 +531,7 @@
 				60D072A61EFB915C00A2C628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60D072A71EFB915C00A2C628 /* Build configuration list for PBXNativeTarget "WSScrollableHeaderTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +540,7 @@
 				60D072A91EFB915C00A2C628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60D072AA1EFB915C00A2C628 /* Build configuration list for PBXNativeTarget "WSScrollableHeaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +549,7 @@
 				60D072AC1EFB915C00A2C628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

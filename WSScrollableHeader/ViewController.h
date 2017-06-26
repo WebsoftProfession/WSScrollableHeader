@@ -2,14 +2,21 @@
 //  ViewController.h
 //  WSScrollableHeader
 //
-//  Created by Dotsquares on 6/22/17.
-//  Copyright © 2017 WebsoftProfession. All rights reserved.
+//  Created by WebsoftProfession on 6/22/17.
+//  WebsoftProfession
 //
 
 #import <UIKit/UIKit.h>
+#import "WSScrollHeaderView.h"
 
 @interface ViewController : UIViewController
-
+{
+    __weak IBOutlet WSScrollHeaderView *wsImageHeader;
+    __weak IBOutlet WSScrollHeaderView *wsNameHeader;
+    __weak IBOutlet WSScrollHeaderView *wsSearchHeader;
+    __weak IBOutlet UIImageView *imgView;
+    
+}
 
 @end
 
